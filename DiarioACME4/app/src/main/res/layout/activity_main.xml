@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".Modelo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diário de"
+        android:textStyle="bold"
+        android:textSize="38dp"
+        android:id="@+id/txtQueridoDiario"
+        android:layout_gravity="center"
+        android:textColor="@color/colorQueridoDiario"
+        android:fontFamily="cursive"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clique sobre o titulo para alterar ou mantenha pressionado para excluir."
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/txtAviso"
+        android:layout_gravity="center"
+        android:textColor="@color/colorQueridoDiario"
+        android:fontFamily="cursive"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lstDiario"
+        android:dividerHeight="1sp"
+        android:divider="@color/colorListaDiario"
+        />
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escrever..."
+            android:fontFamily="cursive"
+            android:textSize="18dp"
+            android:id="@+id/btnEscrever"
+            android:background="@color/colorListaDiario"
+            android:textColor="@color/CorLetra"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:textSize="18dp"
+            android:fontFamily="cursive"
+            android:id="@+id/btnVoltar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/btnEscrever"
+            android:background="@color/colorListaDiario"
+            android:textColor="@color/CorLetra"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

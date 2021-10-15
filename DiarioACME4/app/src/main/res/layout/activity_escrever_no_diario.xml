@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".Modelo.Escrever_no_diario">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coloque a senha para visualizar "
+        android:visibility="invisible"
+        android:fontFamily="cursive"
+        android:textSize="25dp"
+        android:textColor="@color/colorQueridoDiario"
+        android:layout_margin="5dp"
+        android:id="@+id/txtVerificarSenha"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Voce lembra da sua senha, não é?"
+        android:fontFamily="cursive"
+        android:id="@+id/edtVerificarSenha"
+        android:inputType="textPassword"
+        android:visibility="invisible"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo do Diário: "
+        android:fontFamily="cursive"
+        android:textSize="25dp"
+        android:textColor="@color/colorQueridoDiario"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sobre o que você vai escrever hoje?"
+        android:fontFamily="cursive"
+        android:id="@+id/edtTituloDiario"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conteudo do Diário: "
+        android:fontFamily="cursive"
+        android:textSize="25dp"
+        android:textColor="@color/colorQueridoDiario"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Me conte tudo que aconteceu com você..."
+        android:fontFamily="cursive"
+        android:inputType="textMultiLine"
+        android:id="@+id/edtConteudoDiario"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Palavra secreta: "
+        android:fontFamily="cursive"
+        android:textSize="25dp"
+        android:textColor="@color/colorQueridoDiario"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escolha uma senha bem difícil..."
+        android:fontFamily="cursive"
+        android:inputType="textPassword"
+        android:id="@+id/edtPalavraSecreta"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terminei!"
+                android:textSize="18dp"
+                android:id="@+id/btnTerminei"
+                android:fontFamily="cursive"
+                android:layout_marginLeft="60dp"
+                android:layout_alignParentLeft="true"
+                android:background="@color/colorListaDiario"
+                android:textColor="@color/CorLetra"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voltar"
+                android:textSize="18dp"
+                android:fontFamily="cursive"
+                android:id="@+id/btnVoltar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/btnTerminei"
+                android:background="@color/colorListaDiario"
+                android:textColor="@color/CorLetra"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A881F3</color>
+    <color name="colorPrimaryDark">#9069DB</color>
+    <color name="colorAccent">#7340C5</color>
+    <color name="colorQueridoDiario">#673AB7</color>
+    <color name="colorListaDiario">#A98ED8</color>
+    <color name="CorLetra">#FFFDFD</color>
+</resources>
